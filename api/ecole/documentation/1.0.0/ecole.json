@@ -609,9 +609,6 @@
                     "type": "string"
                   }
                 },
-                "option": {
-                  "type": "string"
-                },
                 "Numero_parent_telephone": {
                   "type": "integer"
                 },

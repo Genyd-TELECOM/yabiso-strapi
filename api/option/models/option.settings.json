@@ -19,13 +19,13 @@
       "model": "niveau",
       "via": "options"
     },
-    "eleves": {
-      "via": "option",
-      "collection": "eleve"
-    },
     "titulaires": {
       "via": "option",
       "collection": "titulaire"
+    },
+    "class": {
+      "via": "options",
+      "model": "classe"
     }
   }
 }

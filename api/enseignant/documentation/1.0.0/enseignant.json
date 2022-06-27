@@ -594,6 +594,12 @@
                 "titulaire": {
                   "type": "string"
                 },
+                "options": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },

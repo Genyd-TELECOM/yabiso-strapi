@@ -557,69 +557,6 @@
               }
             }
           },
-          "eleves": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nom": {
-                  "type": "string"
-                },
-                "post_nom": {
-                  "type": "string"
-                },
-                "prenom": {
-                  "type": "string"
-                },
-                "classe": {
-                  "type": "string"
-                },
-                "presences": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "option": {
-                  "type": "string"
-                },
-                "Numero_parent_telephone": {
-                  "type": "integer"
-                },
-                "numero_parent_whatsapp": {
-                  "type": "integer"
-                },
-                "adresse_email_parent": {
-                  "type": "string"
-                },
-                "type_notifications": {
-                  "type": "string",
-                  "enum": [
-                    "whatsapp",
-                    "sms",
-                    "email"
-                  ]
-                },
-                "ecole": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "titulaires": {
             "type": "array",
             "items": {
@@ -651,6 +588,49 @@
               }
             }
           },
+          "class": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nom": {
+                "type": "string"
+              },
+              "eleves": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "enseignants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "titulaire": {
+                "type": "string"
+              },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -665,17 +645,14 @@
           "niveau": {
             "type": "string"
           },
-          "eleves": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "titulaires": {
             "type": "array",
             "items": {
               "type": "string"
             }
+          },
+          "class": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

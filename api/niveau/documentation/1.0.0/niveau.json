@@ -545,17 +545,14 @@
                 "niveau": {
                   "type": "string"
                 },
-                "eleves": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "titulaires": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "class": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

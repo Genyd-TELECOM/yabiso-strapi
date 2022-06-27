@@ -29,10 +29,6 @@
       "via": "eleve",
       "collection": "presence"
     },
-    "option": {
-      "model": "option",
-      "via": "eleves"
-    },
     "Numero_parent_telephone": {
       "type": "integer"
     },

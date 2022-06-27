@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/25/2022 7:29:28 PM"
+    "x-generation-date": "06/27/2022 7:24:51 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6401,9 +6401,6 @@
                     "type": "string"
                   }
                 },
-                "option": {
-                  "type": "string"
-                },
                 "Numero_parent_telephone": {
                   "type": "integer"
                 },
@@ -6516,6 +6513,43 @@
               }
             }
           },
+          "options": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nom": {
+                  "type": "string"
+                },
+                "niveau": {
+                  "type": "string"
+                },
+                "titulaires": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "class": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6541,6 +6575,12 @@
           },
           "titulaire": {
             "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -6648,9 +6688,6 @@
                   "items": {
                     "type": "string"
                   }
-                },
-                "option": {
-                  "type": "string"
                 },
                 "Numero_parent_telephone": {
                   "type": "integer"
@@ -6768,6 +6805,12 @@
               "titulaire": {
                 "type": "string"
               },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -6811,43 +6854,6 @@
                 "updated_by": {
                   "type": "string"
                 }
-              }
-            }
-          },
-          "option": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nom": {
-                "type": "string"
-              },
-              "niveau": {
-                "type": "string"
-              },
-              "eleves": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "titulaires": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -6931,9 +6937,6 @@
             "items": {
               "type": "string"
             }
-          },
-          "option": {
-            "type": "string"
           },
           "Numero_parent_telephone": {
             "type": "integer"
@@ -7046,6 +7049,12 @@
                 },
                 "titulaire": {
                   "type": "string"
+                },
+                "options": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -7180,17 +7189,14 @@
                 "niveau": {
                   "type": "string"
                 },
-                "eleves": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "titulaires": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "class": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -7280,69 +7286,6 @@
               }
             }
           },
-          "eleves": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nom": {
-                  "type": "string"
-                },
-                "post_nom": {
-                  "type": "string"
-                },
-                "prenom": {
-                  "type": "string"
-                },
-                "classe": {
-                  "type": "string"
-                },
-                "presences": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "option": {
-                  "type": "string"
-                },
-                "Numero_parent_telephone": {
-                  "type": "integer"
-                },
-                "numero_parent_whatsapp": {
-                  "type": "integer"
-                },
-                "adresse_email_parent": {
-                  "type": "string"
-                },
-                "type_notifications": {
-                  "type": "string",
-                  "enum": [
-                    "whatsapp",
-                    "sms",
-                    "email"
-                  ]
-                },
-                "ecole": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "titulaires": {
             "type": "array",
             "items": {
@@ -7374,6 +7317,49 @@
               }
             }
           },
+          "class": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nom": {
+                "type": "string"
+              },
+              "eleves": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "enseignants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "titulaire": {
+                "type": "string"
+              },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7388,17 +7374,14 @@
           "niveau": {
             "type": "string"
           },
-          "eleves": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "titulaires": {
             "type": "array",
             "items": {
               "type": "string"
             }
+          },
+          "class": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -7456,9 +7439,6 @@
                 "items": {
                   "type": "string"
                 }
-              },
-              "option": {
-                "type": "string"
               },
               "Numero_parent_telephone": {
                 "type": "integer"
@@ -7608,6 +7588,12 @@
               "titulaire": {
                 "type": "string"
               },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -7633,17 +7619,14 @@
               "niveau": {
                 "type": "string"
               },
-              "eleves": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "titulaires": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "class": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
