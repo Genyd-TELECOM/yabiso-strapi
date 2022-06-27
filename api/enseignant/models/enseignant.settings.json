@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enseignants",
+  "info": {
+    "name": "Enseignant",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "ecoles": {
+      "via": "enseignants",
+      "collection": "ecole"
+    },
+    "classes": {
+      "via": "enseignants",
+      "collection": "classe"
+    },
+    "titulaire": {
+      "via": "enseignant",
+      "model": "titulaire"
+    },
+    "post_nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "cours": {
+      "type": "string"
+    }
+  }
+}

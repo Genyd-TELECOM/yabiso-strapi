@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ecoles",
+  "info": {
+    "name": "Ecole",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "enseignants": {
+      "via": "ecoles",
+      "collection": "enseignant",
+      "dominant": true
+    },
+    "eleves": {
+      "via": "ecole",
+      "collection": "eleve"
+    }
+  }
+}

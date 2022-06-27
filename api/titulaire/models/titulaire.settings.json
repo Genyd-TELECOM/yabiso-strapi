@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "titulaires",
+  "info": {
+    "name": "Titulaire",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "enseignant": {
+      "via": "titulaire",
+      "model": "enseignant"
+    },
+    "classe": {
+      "via": "titulaire",
+      "model": "classe"
+    },
+    "option": {
+      "model": "option",
+      "via": "titulaires"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eleves",
+  "info": {
+    "name": "eleve",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "post_nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "classe": {
+      "via": "eleves",
+      "model": "classe"
+    },
+    "presences": {
+      "via": "eleve",
+      "collection": "presence"
+    },
+    "option": {
+      "model": "option",
+      "via": "eleves"
+    },
+    "Numero_parent_telephone": {
+      "type": "integer"
+    },
+    "numero_parent_whatsapp": {
+      "type": "integer"
+    },
+    "adresse_email_parent": {
+      "type": "email"
+    },
+    "type_notifications": {
+      "type": "enumeration",
+      "enum": [
+        "whatsapp",
+        "sms",
+        "email"
+      ]
+    },
+    "ecole": {
+      "model": "ecole",
+      "via": "eleves"
+    }
+  }
+}

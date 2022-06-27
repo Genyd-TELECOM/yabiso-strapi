@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presences",
+  "info": {
+    "name": "presence",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "statut": {
+      "type": "enumeration",
+      "enum": [
+        "absent",
+        "present"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "eleve": {
+      "via": "presences",
+      "model": "eleve"
+    }
+  }
+}

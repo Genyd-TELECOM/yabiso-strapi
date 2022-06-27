@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/eleves",
+      "handler": "eleve.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eleves/count",
+      "handler": "eleve.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eleves/:id",
+      "handler": "eleve.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/eleves",
+      "handler": "eleve.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/eleves/:id",
+      "handler": "eleve.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/eleves/:id",
+      "handler": "eleve.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

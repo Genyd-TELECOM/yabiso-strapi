@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "options",
+  "info": {
+    "name": "option",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "niveau": {
+      "model": "niveau",
+      "via": "options"
+    },
+    "eleves": {
+      "via": "option",
+      "collection": "eleve"
+    },
+    "titulaires": {
+      "via": "option",
+      "collection": "titulaire"
+    }
+  }
+}

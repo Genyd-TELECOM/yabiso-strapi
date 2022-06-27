@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "name": "classe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "eleves": {
+      "via": "classe",
+      "collection": "eleve"
+    },
+    "enseignants": {
+      "via": "classes",
+      "collection": "enseignant",
+      "dominant": true
+    },
+    "titulaire": {
+      "via": "classe",
+      "model": "titulaire"
+    }
+  }
+}

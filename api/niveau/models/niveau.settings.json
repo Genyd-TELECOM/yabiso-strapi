@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "niveaus",
+  "info": {
+    "name": "Niveau",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "degre": {
+      "type": "enumeration",
+      "enum": [
+        "primaire",
+        "humanite"
+      ]
+    },
+    "options": {
+      "via": "niveau",
+      "collection": "option"
+    }
+  }
+}
