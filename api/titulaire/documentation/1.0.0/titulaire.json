@@ -597,44 +597,7 @@
               "titulaire": {
                 "type": "string"
               },
-              "options": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "option": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nom": {
-                "type": "string"
-              },
-              "niveau": {
-                "type": "string"
-              },
-              "titulaires": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "class": {
+              "Option": {
                 "type": "string"
               },
               "published_at": {
@@ -660,9 +623,6 @@
             "type": "string"
           },
           "classe": {
-            "type": "string"
-          },
-          "option": {
             "type": "string"
           },
           "published_at": {

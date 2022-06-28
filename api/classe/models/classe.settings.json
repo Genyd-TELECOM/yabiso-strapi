@@ -28,9 +28,8 @@
       "via": "classe",
       "model": "titulaire"
     },
-    "options": {
-      "collection": "option",
-      "via": "class"
+    "Option": {
+      "type": "string"
     }
   }
 }

@@ -18,10 +18,6 @@
         "primaire",
         "humanite"
       ]
-    },
-    "options": {
-      "via": "niveau",
-      "collection": "option"
     }
   }
 }

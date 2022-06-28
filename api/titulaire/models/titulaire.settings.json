@@ -19,10 +19,6 @@
     "classe": {
       "via": "titulaire",
       "model": "classe"
-    },
-    "option": {
-      "model": "option",
-      "via": "titulaires"
     }
   }
 }

@@ -587,6 +587,12 @@
               "ecole": {
                 "type": "string"
               },
+              "salle_de_class": {
+                "type": "string"
+              },
+              "Date_anniversaire": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

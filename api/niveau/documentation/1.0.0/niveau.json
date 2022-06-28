@@ -529,43 +529,6 @@
               "humanite"
             ]
           },
-          "options": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nom": {
-                  "type": "string"
-                },
-                "niveau": {
-                  "type": "string"
-                },
-                "titulaires": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "class": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -580,12 +543,6 @@
               "primaire",
               "humanite"
             ]
-          },
-          "options": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "published_at": {
             "type": "string",

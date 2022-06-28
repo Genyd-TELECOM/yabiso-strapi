@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salle_de_classes",
+  "info": {
+    "name": "salle-de-classe"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom_de_la_salle": {
+      "type": "string"
+    },
+    "eleves": {
+      "via": "salle_de_class",
+      "collection": "eleve"
+    }
+  }
+}

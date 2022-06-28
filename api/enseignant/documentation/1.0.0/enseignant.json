@@ -594,11 +594,8 @@
                 "titulaire": {
                   "type": "string"
                 },
-                "options": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "Option": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -624,9 +621,6 @@
                 "type": "string"
               },
               "classe": {
-                "type": "string"
-              },
-              "option": {
                 "type": "string"
               },
               "published_at": {

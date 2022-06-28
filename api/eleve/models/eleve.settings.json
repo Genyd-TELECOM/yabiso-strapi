@@ -49,6 +49,13 @@
     "ecole": {
       "model": "ecole",
       "via": "eleves"
+    },
+    "salle_de_class": {
+      "via": "eleves",
+      "model": "salle-de-classe"
+    },
+    "Date_anniversaire": {
+      "type": "date"
     }
   }
 }

@@ -557,11 +557,8 @@
               "titulaire": {
                 "type": "string"
               },
-              "options": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "Option": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -664,6 +661,38 @@
               }
             }
           },
+          "salle_de_class": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nom_de_la_salle": {
+                "type": "string"
+              },
+              "eleves": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "Date_anniversaire": {
+            "type": "string",
+            "format": "date"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -709,6 +738,13 @@
           },
           "ecole": {
             "type": "string"
+          },
+          "salle_de_class": {
+            "type": "string"
+          },
+          "Date_anniversaire": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/options",
-      "handler": "option.find",
+      "path": "/salle-de-classes",
+      "handler": "salle-de-classe.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/options/count",
-      "handler": "option.count",
+      "path": "/salle-de-classes/count",
+      "handler": "salle-de-classe.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/options/:id",
-      "handler": "option.findOne",
+      "path": "/salle-de-classes/:id",
+      "handler": "salle-de-classe.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/options",
-      "handler": "option.create",
+      "path": "/salle-de-classes",
+      "handler": "salle-de-classe.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/options/:id",
-      "handler": "option.update",
+      "path": "/salle-de-classes/:id",
+      "handler": "salle-de-classe.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/options/:id",
-      "handler": "option.delete",
+      "path": "/salle-de-classes/:id",
+      "handler": "salle-de-classe.delete",
       "config": {
         "policies": []
       }
