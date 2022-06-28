@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/presences",
-      "handler": "presence.create",
+      "handler": "presence.createPresence",
       "config": {
         "policies": []
       }
