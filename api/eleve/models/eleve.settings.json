@@ -21,7 +21,34 @@
     "prenom": {
       "type": "string"
     },
-    "classe": {
+    "sex": {
+      "via": "eleves",
+      "model": "sexe"
+    },
+    "lieu_naissance": {
+      "type": "string"
+    },
+    "date_naissance": {
+      "type": "date"
+    },
+    "nationalite": {
+      "type": "string"
+    },
+    "numero_telephone_parent": {
+      "type": "integer"
+    },
+    "email_parent": {
+      "type": "email"
+    },
+    "notification": {
+      "via": "eleves",
+      "model": "notification"
+    },
+    "option": {
+      "via": "eleves",
+      "model": "option"
+    },
+    "class": {
       "via": "eleves",
       "model": "classe"
     },
@@ -29,33 +56,9 @@
       "via": "eleve",
       "collection": "presence"
     },
-    "Numero_parent_telephone": {
-      "type": "integer"
-    },
-    "numero_parent_whatsapp": {
-      "type": "integer"
-    },
-    "adresse_email_parent": {
-      "type": "email"
-    },
-    "type_notifications": {
-      "type": "enumeration",
-      "enum": [
-        "whatsapp",
-        "sms",
-        "email"
-      ]
-    },
-    "ecole": {
-      "model": "ecole",
-      "via": "eleves"
-    },
-    "salle_de_class": {
+    "communiques": {
       "via": "eleves",
-      "model": "salle-de-classe"
-    },
-    "Date_anniversaire": {
-      "type": "date"
+      "collection": "communiques"
     }
   }
 }

@@ -37,7 +37,8 @@
       "type": "email"
     },
     "cours": {
-      "type": "string"
+      "via": "enseignant",
+      "collection": "cours"
     }
   }
 }

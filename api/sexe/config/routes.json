@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/salle-de-classes",
-      "handler": "salle-de-classe.find",
+      "path": "/sexes",
+      "handler": "sexe.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/salle-de-classes/count",
-      "handler": "salle-de-classe.count",
+      "path": "/sexes/count",
+      "handler": "sexe.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/salle-de-classes/:id",
-      "handler": "salle-de-classe.findOne",
+      "path": "/sexes/:id",
+      "handler": "sexe.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/salle-de-classes",
-      "handler": "salle-de-classe.create",
+      "path": "/sexes",
+      "handler": "sexe.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/salle-de-classes/:id",
-      "handler": "salle-de-classe.update",
+      "path": "/sexes/:id",
+      "handler": "sexe.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/salle-de-classes/:id",
-      "handler": "salle-de-classe.delete",
+      "path": "/sexes/:id",
+      "handler": "sexe.delete",
       "config": {
         "policies": []
       }

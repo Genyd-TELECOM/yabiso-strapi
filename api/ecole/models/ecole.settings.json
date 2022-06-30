@@ -24,9 +24,9 @@
       "collection": "enseignant",
       "dominant": true
     },
-    "eleves": {
+    "classes": {
       "via": "ecole",
-      "collection": "eleve"
+      "collection": "classe"
     }
   }
 }

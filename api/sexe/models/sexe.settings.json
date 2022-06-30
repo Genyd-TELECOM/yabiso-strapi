@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sexes",
+  "info": {
+    "name": "sexe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "Masculin",
+        "Feminin"
+      ]
+    },
+    "eleves": {
+      "via": "sex",
+      "collection": "eleve"
+    }
+  }
+}

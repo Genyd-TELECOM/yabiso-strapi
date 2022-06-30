@@ -525,72 +525,6 @@
           "nom": {
             "type": "string"
           },
-          "eleves": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nom": {
-                  "type": "string"
-                },
-                "post_nom": {
-                  "type": "string"
-                },
-                "prenom": {
-                  "type": "string"
-                },
-                "classe": {
-                  "type": "string"
-                },
-                "presences": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "Numero_parent_telephone": {
-                  "type": "integer"
-                },
-                "numero_parent_whatsapp": {
-                  "type": "integer"
-                },
-                "adresse_email_parent": {
-                  "type": "string"
-                },
-                "type_notifications": {
-                  "type": "string",
-                  "enum": [
-                    "whatsapp",
-                    "sms",
-                    "email"
-                  ]
-                },
-                "ecole": {
-                  "type": "string"
-                },
-                "salle_de_class": {
-                  "type": "string"
-                },
-                "Date_anniversaire": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "enseignants": {
             "type": "array",
             "items": {
@@ -629,7 +563,10 @@
                   "type": "string"
                 },
                 "cours": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -654,8 +591,11 @@
               "enseignant": {
                 "type": "string"
               },
-              "classe": {
-                "type": "string"
+              "classes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -668,8 +608,175 @@
               }
             }
           },
-          "Option": {
-            "type": "string"
+          "eleves": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nom": {
+                  "type": "string"
+                },
+                "post_nom": {
+                  "type": "string"
+                },
+                "prenom": {
+                  "type": "string"
+                },
+                "sex": {
+                  "type": "string"
+                },
+                "lieu_naissance": {
+                  "type": "string"
+                },
+                "date_naissance": {
+                  "type": "string"
+                },
+                "nationalite": {
+                  "type": "string"
+                },
+                "numero_telephone_parent": {
+                  "type": "integer"
+                },
+                "email_parent": {
+                  "type": "string"
+                },
+                "notification": {
+                  "type": "string"
+                },
+                "option": {
+                  "type": "string"
+                },
+                "class": {
+                  "type": "string"
+                },
+                "presences": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "communiques": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "ecole": {
+            "required": [
+              "id",
+              "Nom"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Nom": {
+                "type": "string"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "enseignants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "classes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "appels": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nom": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "classe": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "cour": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nom": {
+                "type": "string"
+              },
+              "enseignant": {
+                "type": "string"
+              },
+              "classes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -682,12 +789,6 @@
           "nom": {
             "type": "string"
           },
-          "eleves": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "enseignants": {
             "type": "array",
             "items": {
@@ -697,7 +798,22 @@
           "titulaire": {
             "type": "string"
           },
-          "Option": {
+          "eleves": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ecole": {
+            "type": "string"
+          },
+          "appels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cour": {
             "type": "string"
           },
           "published_at": {

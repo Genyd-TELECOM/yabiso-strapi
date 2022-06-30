@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "salle_de_classes",
+  "collectionName": "options",
   "info": {
-    "name": "salle-de-classe"
+    "name": "option"
   },
   "options": {
     "increments": true,
@@ -11,12 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nom_de_la_salle": {
+    "nom": {
       "type": "string"
     },
     "eleves": {
-      "via": "salle_de_class",
-      "collection": "eleve"
+      "collection": "eleve",
+      "via": "option"
     }
   }
 }

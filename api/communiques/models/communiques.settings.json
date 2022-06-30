@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "communiques",
+  "info": {
+    "name": "communiques",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "richtext"
+    },
+    "eleves": {
+      "collection": "eleve",
+      "via": "communiques",
+      "dominant": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "classe",
+        "convocation",
+        "general"
+      ]
+    }
+  }
+}

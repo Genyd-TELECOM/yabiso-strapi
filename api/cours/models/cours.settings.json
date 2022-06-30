@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cours",
+  "info": {
+    "name": "cours"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "enseignant": {
+      "model": "enseignant",
+      "via": "cours"
+    },
+    "classes": {
+      "collection": "classe",
+      "via": "cour"
+    }
+  }
+}

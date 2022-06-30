@@ -16,9 +16,9 @@
       "via": "titulaire",
       "model": "enseignant"
     },
-    "classe": {
+    "classes": {
       "via": "titulaire",
-      "model": "classe"
+      "collection": "classe"
     }
   }
 }

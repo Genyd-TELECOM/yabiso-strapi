@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appels",
+  "info": {
+    "name": "Appel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "classe": {
+      "model": "classe",
+      "via": "appels"
+    }
+  }
+}

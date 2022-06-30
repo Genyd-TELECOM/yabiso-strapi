@@ -15,21 +15,30 @@
     "nom": {
       "type": "string"
     },
-    "eleves": {
-      "via": "classe",
-      "collection": "eleve"
-    },
     "enseignants": {
       "via": "classes",
       "collection": "enseignant",
       "dominant": true
     },
     "titulaire": {
-      "via": "classe",
+      "via": "classes",
       "model": "titulaire"
     },
-    "Option": {
-      "type": "string"
+    "eleves": {
+      "collection": "eleve",
+      "via": "class"
+    },
+    "ecole": {
+      "model": "ecole",
+      "via": "classes"
+    },
+    "appels": {
+      "via": "classe",
+      "collection": "appel"
+    },
+    "cour": {
+      "via": "classes",
+      "model": "cours"
     }
   }
 }

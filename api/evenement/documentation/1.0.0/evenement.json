@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/salle-de-classes": {
+    "/evenements": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,10 +10,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Evenement"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Salle-de-classe"
+          "Evenement"
         ],
         "parameters": [
           {
@@ -202,11 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Evenement"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Salle-de-classe"
+          "Evenement"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewSalle-de-classe"
+                "$ref": "#/components/schemas/NewEvenement"
               }
             }
           }
         }
       }
     },
-    "/salle-de-classes/count": {
+    "/evenements/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -270,8 +265,8 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -311,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Salle-de-classe"
+          "Evenement"
         ],
         "parameters": []
       }
     },
-    "/salle-de-classes/{id}": {
+    "/evenements/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -326,11 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Evenement"
                 }
               }
             }
@@ -368,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Salle-de-classe"
+          "Evenement"
         ],
         "parameters": [
           {
@@ -392,11 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Evenement"
                 }
               }
             }
@@ -434,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Salle-de-classe"
+          "Evenement"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewSalle-de-classe"
+                "$ref": "#/components/schemas/NewEvenement"
               }
             }
           }
@@ -508,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Salle-de-classe"
+          "Evenement"
         ],
         "parameters": [
           {
@@ -527,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Salle-de-classe": {
+      "Evenement": {
         "required": [
           "id"
         ],
@@ -535,74 +522,12 @@
           "id": {
             "type": "string"
           },
-          "nom_de_la_salle": {
+          "nom": {
             "type": "string"
           },
-          "eleves": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nom": {
-                  "type": "string"
-                },
-                "post_nom": {
-                  "type": "string"
-                },
-                "prenom": {
-                  "type": "string"
-                },
-                "classe": {
-                  "type": "string"
-                },
-                "presences": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "Numero_parent_telephone": {
-                  "type": "integer"
-                },
-                "numero_parent_whatsapp": {
-                  "type": "integer"
-                },
-                "adresse_email_parent": {
-                  "type": "string"
-                },
-                "type_notifications": {
-                  "type": "string",
-                  "enum": [
-                    "whatsapp",
-                    "sms",
-                    "email"
-                  ]
-                },
-                "ecole": {
-                  "type": "string"
-                },
-                "salle_de_class": {
-                  "type": "string"
-                },
-                "Date_anniversaire": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "date": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",
@@ -610,16 +535,14 @@
           }
         }
       },
-      "NewSalle-de-classe": {
+      "NewEvenement": {
         "properties": {
-          "nom_de_la_salle": {
+          "nom": {
             "type": "string"
           },
-          "eleves": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "date": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",
@@ -635,5 +558,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Evenement"
+    }
+  ]
 }

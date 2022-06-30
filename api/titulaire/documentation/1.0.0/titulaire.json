@@ -558,7 +558,10 @@
                 "type": "string"
               },
               "cours": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -571,43 +574,55 @@
               }
             }
           },
-          "classe": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nom": {
-                "type": "string"
-              },
-              "eleves": {
-                "type": "array",
-                "items": {
+          "classes": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nom": {
+                  "type": "string"
+                },
+                "enseignants": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "titulaire": {
+                  "type": "string"
+                },
+                "eleves": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ecole": {
+                  "type": "string"
+                },
+                "appels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "cour": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "enseignants": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "titulaire": {
-                "type": "string"
-              },
-              "Option": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -622,8 +637,11 @@
           "enseignant": {
             "type": "string"
           },
-          "classe": {
-            "type": "string"
+          "classes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

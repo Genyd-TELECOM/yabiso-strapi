@@ -558,7 +558,31 @@
               "prenom": {
                 "type": "string"
               },
-              "classe": {
+              "sex": {
+                "type": "string"
+              },
+              "lieu_naissance": {
+                "type": "string"
+              },
+              "date_naissance": {
+                "type": "string"
+              },
+              "nationalite": {
+                "type": "string"
+              },
+              "numero_telephone_parent": {
+                "type": "integer"
+              },
+              "email_parent": {
+                "type": "string"
+              },
+              "notification": {
+                "type": "string"
+              },
+              "option": {
+                "type": "string"
+              },
+              "class": {
                 "type": "string"
               },
               "presences": {
@@ -567,31 +591,11 @@
                   "type": "string"
                 }
               },
-              "Numero_parent_telephone": {
-                "type": "integer"
-              },
-              "numero_parent_whatsapp": {
-                "type": "integer"
-              },
-              "adresse_email_parent": {
-                "type": "string"
-              },
-              "type_notifications": {
-                "type": "string",
-                "enum": [
-                  "whatsapp",
-                  "sms",
-                  "email"
-                ]
-              },
-              "ecole": {
-                "type": "string"
-              },
-              "salle_de_class": {
-                "type": "string"
-              },
-              "Date_anniversaire": {
-                "type": "string"
+              "communiques": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

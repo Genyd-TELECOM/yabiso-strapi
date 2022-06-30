@@ -23,8 +23,8 @@
       "type": "date"
     },
     "eleve": {
-      "via": "presences",
-      "model": "eleve"
+      "model": "eleve",
+      "via": "presences"
     }
   }
 }

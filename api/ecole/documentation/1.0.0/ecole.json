@@ -567,7 +567,10 @@
                   "type": "string"
                 },
                 "cours": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -581,7 +584,7 @@
               }
             }
           },
-          "eleves": {
+          "classes": {
             "type": "array",
             "items": {
               "required": [
@@ -594,45 +597,31 @@
                 "nom": {
                   "type": "string"
                 },
-                "post_nom": {
-                  "type": "string"
-                },
-                "prenom": {
-                  "type": "string"
-                },
-                "classe": {
-                  "type": "string"
-                },
-                "presences": {
+                "enseignants": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "Numero_parent_telephone": {
-                  "type": "integer"
-                },
-                "numero_parent_whatsapp": {
-                  "type": "integer"
-                },
-                "adresse_email_parent": {
+                "titulaire": {
                   "type": "string"
                 },
-                "type_notifications": {
-                  "type": "string",
-                  "enum": [
-                    "whatsapp",
-                    "sms",
-                    "email"
-                  ]
+                "eleves": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "ecole": {
                   "type": "string"
                 },
-                "salle_de_class": {
-                  "type": "string"
+                "appels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
-                "Date_anniversaire": {
+                "cour": {
                   "type": "string"
                 },
                 "published_at": {
@@ -670,7 +659,7 @@
               "type": "string"
             }
           },
-          "eleves": {
+          "classes": {
             "type": "array",
             "items": {
               "type": "string"
