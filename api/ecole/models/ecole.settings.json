@@ -27,6 +27,11 @@
     "classes": {
       "via": "ecole",
       "collection": "classe"
+    },
+    "users": {
+      "via": "ecole",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

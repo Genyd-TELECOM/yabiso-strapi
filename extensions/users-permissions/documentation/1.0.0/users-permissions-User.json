@@ -1250,6 +1250,50 @@
                 "type": "string"
               }
             }
+          },
+          "ecole": {
+            "required": [
+              "id",
+              "Nom"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Nom": {
+                "type": "string"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "enseignants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "classes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1290,6 +1334,9 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "ecole": {
             "type": "string"
           },
           "created_by": {
